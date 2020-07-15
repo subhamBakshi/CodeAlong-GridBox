@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr, 2fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(200px, auto);
+
+        }
+
+        .grid-container>div {
+            padding: 1em;
+            background-color: grey;
+        }
+
+        .grid-container>div:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        #div1 {
+            align-items: start;
+            justify-items: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt doloribus voluptates velit
+            numquam maxime illum dolores sit pariatur, facere dignissimos ab distinctio cupiditate rerum unde dicta
+            molestiae id. Inventore, a?
+        </div>
+        <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dicta repellat neque,
+            deserunt possimus consequuntur nam consectetur aliquam atque magni, illo, dolorum voluptas. Aliquam error
+            repellat facere ipsam, nam aut.Tenetur, recusandae nemo dolor aspernatur quas maxime, aliquam fuga inventore
+            vitae perferendis eum aut natus officiis pariatur fugiat itaque vel id molestiae maiores! Cupiditate, sint
+            quisquam accusantium dolore voluptas incidunt!</div>
+        <div id="box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas id blanditiis doloribus beatae
+            qui maiores nemo atque aspernatur, distinctio voluptate unde suscipit cumque nesciunt? Adipisci doloribus
+            nemo optio consequuntur iusto?
+        </div>
+        <div id="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magni ullam corrupti error
+            deserunt animi quos mollitia illum voluptatibus voluptate accusantium eum omnis eos facilis, debitis
+            inventore tempora commodi. Eaque.
+            Sapiente voluptatibus fugit cum obcaecati nobis eveniet voluptates placeat dignissimos doloribus quis
+            officia alias reiciendis consequatur dolore quisquam commodi sit atque qui, tempore, ducimus maiores aut
+            dicta enim. Possimus, sequi?
+            Temporibus recusandae soluta voluptatem harum voluptates molestiae id quos repellendus rerum, at neque animi
+            velit quia quo doloribus. Error autem nam doloribus itaque eligendi quo magni tenetur harum delectus est!
+        </div>
+        <div id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis ipsa
+            reprehenderit, alias porro culpa suscipit quae. Culpa, perferendis assumenda, rerum exercitationem nesciunt
+            placeat, distinctio vero officiis amet labore sint!</div>
+        <div id="box6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia maxime mollitia in
+            perspiciatis. Odit, temporibus aut, iste corrupti modi quaerat reiciendis neque, cumque doloremque hic
+            maiores? Et exercitationem recusandae placeat!Soluta, consequuntur! Ut, possimus nemo ipsam cupiditate amet
+            deserunt repellat. Aspernatur nisi beatae, placeat in nostrum earum eum. Cum placeat ipsa enim sint
+            reiciendis repellat dignissimos quas maiores modi? Rerum?</div>
+    </div>
+</body>
+
+</html>
